@@ -6,6 +6,9 @@ const app=express();
 
 const router=express.Router();
 
+// Middleware para ignorar solicitudes a /favicon.ico
+app.get('/favicon.ico', (req, res) => res.status(204).end());
+
 
 //rutas crud create,read,update,delete
 router.post("/",async(req,res)=>{
