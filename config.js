@@ -21,7 +21,7 @@ const dbconnect = async () => {
   mongoose.set('strictQuery', true);  // Configura el modo strictQuery
   
   try {
-    await mongoose.connect("mongodb://localhost:27017/user_prueba");
+    await mongoose.connect("mongodb+srv://root:123@cluster-2.0pffj.mongodb.net/user_prueba?retryWrites=true&w=majority&appName=Cluster-2");
     console.log("Conexión correcta a MongoDB");
   } catch (err) {
     console.log("Error de conexión:", err);
