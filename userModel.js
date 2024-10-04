@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose'); //
 
-// Definir el esquema del usuario
+// Definir el esquema o modelo del usuario
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
